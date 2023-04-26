@@ -16,4 +16,5 @@ tidyverse_update()#Update tidyverse packages
 
 #filter() allows you to select a subset of rows in a data frame. 
 
-
+#arrange() sorts the observations in a dataset in ascending or descending order
+#based on one of its variables.
