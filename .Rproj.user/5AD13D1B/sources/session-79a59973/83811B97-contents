@@ -2,3 +2,13 @@
 
 install.packages("tidyverse")
 library(tidyverse)
+
+#Some helpful bits to check tidyverse
+tidyverse_conflicts()#Conflicts between tidyverse and other packages
+tidyverse_deps()#List all tidyverse dependencies
+tidyverse_packages()#List all tidyverse packages
+tidyverse_update()#Update tidyverse packages
+
+
+
+
