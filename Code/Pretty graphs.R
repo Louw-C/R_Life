@@ -12,3 +12,16 @@ require(hrbrthemes)
 #scale_color_manual(values= wes_palette("FantasticFox1", n = 3))
 
 #Also! If you want to specify a package - package name::
+
+##Another colour palette - colour of whales
+
+library(devtools)
+devtools::install_github("dawnbarlow/musculusColors")
+library(musculusColors)
+names(Bm_palettes)
+#Example code
+ggplot(data.frame(x = rnorm(1e4), y = rnorm(1e4)), aes(x = x, y = y)) +
+  geom_hex() +
+  coord_fixed() +
+  scale_fill_gradientn(colours = musculus_palette("Bmlunge", n=50)) +
+  theme_classic()
